@@ -29,7 +29,6 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {}
   buttonClicked() {
-    console.log('Botão clicado!');
     this.aparece=true;
   }
 }
