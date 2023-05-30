@@ -17,6 +17,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./core/profile/profile.module').then((m) => m.ProfileModule),
   },
+  {
+    path: 'aplicacao-teste',
+    loadChildren: ()=>
+      import('./core/aplicacao-teste/aplicacao-teste.module').then((m) =>m.AplicacaoTesteModule),
+  }
 ];
 
 @NgModule({
