@@ -1,0 +1,27 @@
+#links {
+  text-align: center;
+}
+
+#container {
+  background-image: url('https://images4.alphacoders.com/962/thumb-1920-962077.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.image-header {
+  border-bottom: 25px solid transparent;
+}
+.COLOR_WHITE{
+  color: white;
+}
+.COLOR_BLUE{
+  color: blue;
+}
+.container-body{
+  display: flex;
+}
