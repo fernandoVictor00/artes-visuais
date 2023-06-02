@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Code', monospace;
+
+}
+
+body {
+    background-color: #000000;
+
+}
+
+#container {
+    Width: 700px;
+    Height: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 108px;
+    border: 1px solid;
+    border-radius: 35px;
+    background-color: #DADADA;
+
+}
+
+
+
+.input {
+    width: 540px;
+    height: 62px;
+    left: 440px;
+    top: 331px;
+
+    background: #497986;
+    border-radius: 10px;
+    margin: 12px auto 60px;
+}
+
+.label {
+    font-weight: 700;
+    font-size: 30px;
+    color: #497986;
+    text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+    
+}
+
+#username::placeholder {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #D5CCCC;
+    text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+#password::placeholder {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #D5CCCC;
+    text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+
+.button {
+  
+    width: 441px;
+    height: 91px;
+    background: #497986;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 35px;
+    color: #F49F1C;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+   
+}
+ 
+#button {
+    display: flex;
+    justify-content: center;
+}
