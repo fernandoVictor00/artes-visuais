@@ -6,14 +6,14 @@
 <div id="container">
 
   <form (ngSubmit)="onSubmit()">
-
     <div>
+      <img src="/./src/assets/logo.jpeg" alt="Imagem de login" class="logo">
       <div>
         <label class="label" for="username">EMAIL:</label>
       </div>
       <input  type="email" id="username" class="input" name="username" placeholder="DIGITE SEU EMAIL" [(ngModel)]="username">
     </div>
-   
+    
     <div>
       <div>
         <label class="label" for="password">SENHA:</label>

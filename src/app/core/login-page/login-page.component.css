@@ -27,6 +27,12 @@ body {
 
 }
 
+.logo {
+    display: block;
+    margin-bottom: 52px;
+    display: block;
+    margin-left: 175;
+  }
 
 
 .input {
