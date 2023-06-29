@@ -21,6 +21,11 @@ const routes: Routes = [
     path: 'aplicacao-teste',
     loadChildren: ()=>
       import('./core/aplicacao-teste/aplicacao-teste.module').then((m) =>m.AplicacaoTesteModule),
+  },
+  {
+    path: 'login-page',
+    loadChildren: ()=>
+      import('./core/login-page/login-page.module').then((m) =>m.LoginPageModule),
   }
 ];
 
