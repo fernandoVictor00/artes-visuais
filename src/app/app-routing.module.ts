@@ -21,7 +21,14 @@ const routes: Routes = [
     path: 'aplicacao-teste',
     loadChildren: ()=>
       import('./core/aplicacao-teste/aplicacao-teste.module').then((m) =>m.AplicacaoTesteModule),
+  },
+
+  {
+    path: 'manager',
+    loadChildren: ()=>
+      import('./core/manager-page/manager-page.module').then((m) =>m.ManagerPageModule),
   }
+
 ];
 
 @NgModule({
