@@ -27,6 +27,12 @@ const routes: Routes = [
     path: 'manager',
     loadChildren: ()=>
       import('./core/manager-page/manager-page.module').then((m) =>m.ManagerPageModule),
+  },
+
+  {
+    path: 'login',
+    loadChildren: ()=>
+      import('./core/login-page/login-page.module').then((m) =>m.LoginPageModule),
   }
 
 ];
