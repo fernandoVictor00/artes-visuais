@@ -8,8 +8,7 @@ import { ManagerPageComponent } from './core/manager-page/manager-page.component
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ManagerPageComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,

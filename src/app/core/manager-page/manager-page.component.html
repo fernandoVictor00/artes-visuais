@@ -16,34 +16,34 @@
 
   <form [formGroup]="formulario" (ngSubmit)="submitForm()">
     <div>
-      <label class="label  for="nome">DIGITE O NOME:</label>
-      <input class="input type="text" id="nome" formControlName="nome" placeholder="DIGITE O NOME" required>
+      <label class="label"  for="nome">DIGITE O NOME:</label>
+      <input class="input" type="text" id="nome" formControlName="nome" placeholder="DIGITE O NOME" required>
     </div>
-  
+
     <div>
-      <label class="label for="email">DIGITE O EMAIL:</label>
-      <input class="input type="email" id="email" formControlName="email" placeholder="DIGITE O EMAIL" required>
+      <label class="label" for="email">DIGITE O EMAIL:</label>
+      <input class="input" type="email" id="email" formControlName="email" placeholder="DIGITE O EMAIL" required>
     </div>
-  
+
     <div>
       <label class="label" for="senha">DIGITE A SENHA:</label>
       <input id="ultimoInput"  class="input"  type="password" id="senha" formControlName="senha"  placeholder="DIGITE A SENHA" required>
     </div>
-    
+
     <div>
         <label  class="label">
           <input class="checkBox" type="checkbox" formControlName="quemSou"> ALUNO
         </label>
     </div>
 
-    
+
     <div>
         <label  class="label">
           <input class="checkBox" type="checkbox" formControlName="quemSou"> PORFESSOR
         </label>
     </div>
 
-    
+
     <div>
         <label  class="label">
           <input class="ultimoCheckBox" type="checkbox" formControlName="quemSou"> VOLUNTÁRIO
@@ -58,30 +58,31 @@
   </h1>
 
   <div>
-    <label class="label  for="nome">DIGITE O NOME DO PROJETO:</label>
-    <input class="input type="text" id="nome" formControlName="nome" placeholder="DIGITE O NOME" required>
+    <label class="label" for="nome">DIGITE O NOME DO PROJETO:</label>
+    <input class="input" type="text" id="nome" formControlName="nome" placeholder="DIGITE O NOME" required>
   </div>
-  
+
   <div class="checkbox-container">
     <label class="label">ESCOLHA SEU PROFESSOR:
       <div class="checkbox-lateral">
             <input  type="checkbox" formControlName="professor"> AUGUSTO
-    
+
             <label class="label">
                 <input type="checkbox" formControlName="professor"> PEDRO
             </label>
-    
+
             <label class="label">
                 <input   type="checkbox" formControlName="professor"> FLOR
             </label>
+          </div>
     </label>
-      </div>
 
-  <div>   
+
+  <div>
     <label >ESCOLHA O VOLUNTÁRIO:
         <div class="checkbox-lateral">
           <input  type="checkbox" formControlName="professor"> JOÃO
-    
+
           <label class="label">
               <input type="checkbox" formControlName="professor"> GABRIELA
           </label>
@@ -89,7 +90,7 @@
           <label class="label">
               <input   type="checkbox" formControlName="professor"> JOSÉ
           </label>
-        </div>  
+        </div>
     </label>
   </div>
 
@@ -98,7 +99,7 @@
 
   <div style="float: left;">
         <div>
-          <label class="white" for="materiais">NOME</label> 
+          <label class="white" for="materiais">NOME</label>
         </div>
 
         <div>
@@ -111,21 +112,21 @@
           </select>
         </div>
    </div>
-    
+
 
   <div style="float: left;">
         <div >
-          <label class="white" for="quantidade">QUANTIDADE</label> 
+          <label class="white" for="quantidade">QUANTIDADE</label>
         </div>
-        
+
         <div>
           <input class="selecaoQuantidade" type="number" name="quantidade" id="quantidade">
         </div>
   </div>
-</div>   
-        
+</div>
 
-<hr>      
+
+<hr>
   <!--add + material
   <div></div>
 -->
@@ -141,9 +142,8 @@
   </h1>
 
 
-</div>
 
-  
-  
-   
+
+
+
 
