@@ -23,7 +23,7 @@ const routes: Routes = [
       import('./core/aplicacao-teste/aplicacao-teste.module').then((m) =>m.AplicacaoTesteModule),
   },
   {
-    path: 'login-page',
+    path: 'login',
     loadChildren: ()=>
       import('./core/login-page/login-page.module').then((m) =>m.LoginPageModule),
   }
