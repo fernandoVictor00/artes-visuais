@@ -14,10 +14,10 @@
     CADASTRAR PESSOAS
   </h1>
 
-  <form [formGroup]="formulario" (ngSubmit)="submitForm()">
+  <form [formGroup]="managerForm">
     <div>
       <label class="label"  for="nome">DIGITE O NOME:</label>
-      <input class="input" type="text" id="nome" formControlName="nome" placeholder="DIGITE O NOME" required>
+      <input class="input" type="text" id="nome" formControlName="name" placeholder="DIGITE O NOME" required>
     </div>
 
     <div>
@@ -27,10 +27,10 @@
 
     <div>
       <label class="label" for="senha">DIGITE A SENHA:</label>
-      <input id="ultimoInput"  class="input"  type="password" id="senha" formControlName="senha"  placeholder="DIGITE A SENHA" required>
+      <input id="ultimoInput"  class="input"  type="password" id="senha" formControlName="password"  placeholder="DIGITE A SENHA" required>
     </div>
 
-    <div>
+    <!-- <div>
         <label  class="label">
           <input class="checkBox" type="checkbox" formControlName="quemSou"> ALUNO
         </label>
@@ -48,12 +48,12 @@
         <label  class="label">
           <input class="ultimoCheckBox" type="checkbox" formControlName="quemSou"> VOLUNTÁRIO
         </label>
-    </div>
+    </div> -->
 
-    <button class="button" type="submit">CADASTRAR</button>
+    <button class="button" type="submit" (click)="createUser">CADASTRAR</button>
   </form>
 
-  <h1>
+  <!-- <h1>
     CADASTRAR PROJETO
   </h1>
 
@@ -123,7 +123,7 @@
           <input class="selecaoQuantidade" type="number" name="quantidade" id="quantidade">
         </div>
   </div>
-</div>
+</div> -->
 
 
 <hr>
