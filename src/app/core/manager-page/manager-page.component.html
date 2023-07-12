@@ -1,0 +1,149 @@
+<link rel="stylesheet" href="manager-page.component.css" />
+
+<div id="container">
+  <div id="menu">
+        <img src="/./src/assets/LOGO.png" alt="" />
+        <div id="links">
+          <a (click)="redirectPage('manager-page')"href="manager-page.component.html">CADASTRAR</a>
+          <a (click)="redirectPage('')" href="">CERTIFICADO</a>
+        </div>
+        <button class="sair" (click)="redirectPage('home')">SAIR</button>
+  </div>
+
+  <h1>
+    CADASTRAR PESSOAS
+  </h1>
+
+  <form [formGroup]="managerForm">
+    <div>
+      <label class="label"  for="nome">DIGITE O NOME:</label>
+      <input class="input" type="text" id="nome" formControlName="name" placeholder="DIGITE O NOME" required>
+    </div>
+
+    <div>
+      <label class="label" for="email">DIGITE O EMAIL:</label>
+      <input class="input" type="email" id="email" formControlName="email" placeholder="DIGITE O EMAIL" required>
+    </div>
+
+    <div>
+      <label class="label" for="senha">DIGITE A SENHA:</label>
+      <input id="ultimoInput"  class="input"  type="password" id="senha" formControlName="password"  placeholder="DIGITE A SENHA" required>
+    </div>
+
+    <!-- <div>
+        <label  class="label">
+          <input class="checkBox" type="checkbox" formControlName="quemSou"> ALUNO
+        </label>
+    </div>
+
+
+    <div>
+        <label  class="label">
+          <input class="checkBox" type="checkbox" formControlName="quemSou"> PORFESSOR
+        </label>
+    </div>
+
+
+    <div>
+        <label  class="label">
+          <input class="ultimoCheckBox" type="checkbox" formControlName="quemSou"> VOLUNTÁRIO
+        </label>
+    </div> -->
+
+    <button class="button" type="submit" (click)="createUser">CADASTRAR</button>
+  </form>
+
+  <!-- <h1>
+    CADASTRAR PROJETO
+  </h1>
+
+  <div>
+    <label class="label" for="nome">DIGITE O NOME DO PROJETO:</label>
+    <input class="input" type="text" id="nome" formControlName="nome" placeholder="DIGITE O NOME" required>
+  </div>
+
+  <div class="checkbox-container">
+    <label class="label">ESCOLHA SEU PROFESSOR:
+      <div class="checkbox-lateral">
+            <input  type="checkbox" formControlName="professor"> AUGUSTO
+
+            <label class="label">
+                <input type="checkbox" formControlName="professor"> PEDRO
+            </label>
+
+            <label class="label">
+                <input   type="checkbox" formControlName="professor"> FLOR
+            </label>
+          </div>
+    </label>
+
+
+  <div>
+    <label >ESCOLHA O VOLUNTÁRIO:
+        <div class="checkbox-lateral">
+          <input  type="checkbox" formControlName="professor"> JOÃO
+
+          <label class="label">
+              <input type="checkbox" formControlName="professor"> GABRIELA
+          </label>
+
+          <label class="label">
+              <input   type="checkbox" formControlName="professor"> JOSÉ
+          </label>
+        </div>
+    </label>
+  </div>
+
+  <div>
+ <h2>MATERIAIS</h2>
+
+  <div style="float: left;">
+        <div>
+          <label class="white" for="materiais">NOME</label>
+        </div>
+
+        <div>
+          <select class="select" name="materiais" id="materiais" >
+            <option value="">Escolha o material</option>
+            <option value="papel">PAPEL</option>
+            <option value="cartolina">CARTOLINA</option>
+            <option value="régua">RÉGUA</option>
+            <option value="cola">COLA</option>
+          </select>
+        </div>
+   </div>
+
+
+  <div style="float: left;">
+        <div >
+          <label class="white" for="quantidade">QUANTIDADE</label>
+        </div>
+
+        <div>
+          <input class="selecaoQuantidade" type="number" name="quantidade" id="quantidade">
+        </div>
+  </div>
+</div> -->
+
+
+<hr>
+  <!--add + material
+  <div></div>
+-->
+<hr>
+<!--valor caixa
+<div></div>
+-->
+
+</div>
+
+  <h1 >
+    CERTIFICADO
+  </h1>
+
+
+
+
+
+
+

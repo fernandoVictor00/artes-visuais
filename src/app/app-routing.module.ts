@@ -22,11 +22,24 @@ const routes: Routes = [
     loadChildren: ()=>
       import('./core/aplicacao-teste/aplicacao-teste.module').then((m) =>m.AplicacaoTesteModule),
   },
+
+  {
+    path: 'manager',
+    loadChildren: ()=>
+      import('./core/manager-page/manager-page.module').then((m) =>m.ManagerPageModule),
+  },
+
   {
     path: 'login',
     loadChildren: ()=>
       import('./core/login-page/login-page.module').then((m) =>m.LoginPageModule),
+  },
+  {
+    path: 'votacao',
+    loadChildren: ()=>
+    import('./core/voting/voting.module').then((m)=>m.VotingModule),
   }
+
 ];
 
 @NgModule({
