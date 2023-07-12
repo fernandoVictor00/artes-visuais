@@ -1,38 +1,43 @@
-<div id="container">
-  <form [formGroup]="loginForm">
-    <div>
-      <img src="../../../assets/LOGO.png" alt="Imagem de login" class="logo" />
+<div class="page">
+  <div class="container">
+    <form [formGroup]="loginForm">
       <div>
-        <label class="label" for="username">EMAIL:</label>
+        <div class="space-logo">
+          <img src="../../../assets/img/LOGO.png" alt="Imagem de login" class="logo" />
+        </div>
+        <div>
+          <label class="label" for="username">EMAIL:</label>
+        </div>
+        <input
+          type="email"
+          id="username"
+          class="input color-primary"
+          name="username"
+          required
+          placeholder="DIGITE SEU EMAIL"
+          formControlName="email"
+        />
       </div>
-      <input
-        type="email"
-        id="username"
-        class="input"
-        name="username"
-        required
-        placeholder="DIGITE SEU EMAIL"
-        formControlName="email"
-      />
-    </div>
-    <div>
       <div>
-        <label class="label regular-font" for="password">SENHA:</label>
+        <div>
+          <label class="label regular-font" for="password">SENHA:</label>
+        </div>
+        <input
+          type="password"
+          id="password"
+          class="input color-primary"
+          name="password"
+          required
+          placeholder="DIGITE SUA SENHA"
+          formControlName="password"
+        />
       </div>
-      <input
-        type="password"
-        id="password"
-        class="input"
-        name="password"
-        required
-        placeholder="DIGITE SUA SENHA"
-        formControlName="password"
-      />
-    </div>
-    <div id="button">
-      <button class="button" type="submit" (click)="submitLogin()">
-        Entrar
-      </button>
-    </div>
-  </form>
+      <div id="button">
+        <button class="button" type="submit" (click)="submitLogin()">
+          Entrar
+        </button>
+      </div>
+    </form>
+  </div>
+
 </div>
