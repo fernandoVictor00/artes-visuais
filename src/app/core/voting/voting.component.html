@@ -1,1 +1,18 @@
-<p>voting works!</p>
+<div class="container">
+  <div class="image-header">
+    <img src="../../../assets/img/LOGO.png" class="logo-image" alt="Logo Arte Vida"/>
+  </div>
+  <div class="body">
+    <div class="title-body">
+      <h1 class="color-secondary regular-font">VOTE PARA SUA TELA FAVORITA</h1>
+    </div>
+    <div class="image-container">
+      <div *ngFor="let image of images; let i = index" class="image-item" [class.selected]="selectedImage === i" (click)="selectImage(i)">
+        <img [src]="image.src" [alt]="'Image ' + (i + 1)" class="img">
+        <br/>
+        <button class="select-button regular-font color-secondary">Votar nessa obra</button>
+      </div>
+    </div>
+  </div>
+</div>
+
