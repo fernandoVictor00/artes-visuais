@@ -3,3 +3,27 @@ html {
   height: 100%;
   background-color: #090C0e;
 }
+/*FONTS*/
+@font-face {
+  font-family: 'FiraCode';
+  font-style: normal;
+  src: url('.//assets/fonts/Fira_Code/FiraCode-VariableFont_wght.ttf')
+    format('truetype');
+}
+.regular-font {
+  font-family: 'FiraCode';
+}
+/*FONTS COLOR*/
+.color-primary{
+  color: #dadada;
+}
+.color-secondary{
+  color: #497986;
+}
+.color-tertiary{
+  color: #F49F1C;
+}
+.color-black{
+  color: #090C0e;
+}
+
