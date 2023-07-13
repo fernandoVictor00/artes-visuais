@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./voting.component.css']
 })
 export class VotingComponent {
-
+  images: any[] = [
+    { src: '../../../assets/img/tela.png' },
+    { src: '../../../assets/img/tela.png' },
+    { src: '../../../assets/img/tela.png' },
+    { src: '../../../assets/img/tela.png' }
+  ];
+  selectedImage: number = 0;
+  selectImage(imageIndex: number) {
+    this.selectedImage = imageIndex;
+    console.log('imageIndex-> ',imageIndex);
+  }
 }
+
+
+
+

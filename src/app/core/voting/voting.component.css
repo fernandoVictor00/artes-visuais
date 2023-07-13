@@ -1,0 +1,86 @@
+/*FONTS SIZE*/
+.font-little{
+  font-size: 30px;
+}
+.font-medium{
+  font-size: 50px;
+}
+.image-header{
+  padding: 15px 15px 0px 5px;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0px;
+}
+.title-body{
+  display: flex;
+  justify-content: center;
+  font-size: 26px;
+}
+h1{
+  margin: 0px;
+}
+.img{
+  max-width: 100%;
+}
+.image-container {
+  margin: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  padding: auto;
+  justify-content: space-around;
+}
+
+.image-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.select-button {
+  width: 60%;
+  height: 100%;
+  font-size: 17px;
+  background-color: #ccc;
+}
+
+.select-button.selected {
+  background-color: blue;
+}
+
+@media (max-width: 880px) {
+  .title-body {
+    font-size: 22px;
+  }
+}
+@media (max-width: 740px) {
+  .title-body {
+    font-size: 18px;
+  }
+}
+@media (max-width: 610px) {
+  .title-body {
+    font-size: 14px;
+  }
+  .logo-image{
+    width: 100px;
+  }
+}
+@media (max-width: 470px) {
+  .title-body {
+    font-size: 10px;
+  }
+  .select-button{
+    font-size: 14px;
+  }
+}
+@media (max-width: 345px) {
+  .title-body {
+    font-size: 8px;
+  }
+  .select-button{
+    font-size: 12px;
+  }
+}
