@@ -1,7 +1,34 @@
+/*FONTS*/
+@font-face {
+    font-family: 'FiraCode';
+    font-style: normal;
+    src: url('../../../assets/fonts/Fira_Code/FiraCode-VariableFont_wght.ttf')
+      format('truetype');
+  }
+  .regular-font {
+    font-family: 'FiraCode';
+  }
+  
+  /*FONTS SIZE*/
+  .font-little{
+    font-size: 20px;
+  }
+  .font-medium{
+    font-size: 50px;
+  }
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'FiraCode';
+   
 }
+
+/*FONTS COLOR*/
+.color-primary{
+    color: #dadada;
+}
+
 body {
     background-color: black;
 }
@@ -33,14 +60,23 @@ a {
     color: #F49F1C;
 }
 
+a:hover {
+    color: #fff;
+}
+
 .sair {
-    margin-left: 1180px;
-    margin-top: -29px;
+    margin-right: 70px;
+    margin-top: -32px;
+    float: right;
     font-family: 'jsMath-cmr10';
     border-radius: 8px;
     padding: 11px 30px;
     color: #F49F1C;
     background-color: #497986;
+}
+
+.sair:hover {
+    background-color: #fff;
 }
 
 .button {
@@ -56,7 +92,17 @@ a {
     line-height: 20px;  
 }
 
-h1 {
+.button:hover{
+    color: #F49F1C;
+    background-color: #fff;
+}   
+
+.button:active{
+    background-color: #B1B1B1;
+
+}
+
+.h1 {
     display:flex;
     color: #497986;
     justify-content: center;
@@ -69,7 +115,7 @@ h1 {
     line-height: 26px;
     border-radius: 17px;
     background: #F49F1C;
-
+    
     text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -91,7 +137,6 @@ h2 {
 }
 
 .label {
-    margin-bottom: 50px;
     margin-left: 60px;
     color: #497986;
     font-family: 'Fira Code';
@@ -102,11 +147,13 @@ h2 {
 
 .input {
     margin: 36px auto;
+    padding: 2%;
     display: block;
     background-color: #497986;
     border-radius: 10px;
-    padding: 15px 500px;
+    width: 1100px;
 }
+
 
 .input::placeholder {
     color: #D4CCCC;
@@ -114,7 +161,7 @@ h2 {
     font-size: 20px;
     line-height: 26px;
     font-family: 'Fira Code';
-
+    text-align: center;
     text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -175,25 +222,62 @@ hr {
 
 }
 
-option {
-    text-align: center;
+
+.styleRadioButton {
+    margin-left: 60px;
+    margin-bottom: 36px;
+    margin-top: 50px;
 }
 
-select {
+.styleRadioButtonDetails {
+    margin-right: 60px;
+}
+
+.nomeMaterial {
     margin-top: 33px;
+}
+
+.inputMateriais {
     width: 277px;
     height: 32px;
-    flex-shrink: 0;
-    margin-right: 92px;
-    margin-bottom: 47px;
+    margin-top: 33px;
+    margin-bottom: 40px;
+    margin-left: 60px;
+    margin-right: 50px;
 }
 
-.selecaoQuantidade {
-    margin-top: 33px;
+.inputQuantidadeMaterial {
     width: 104px;
     height: 32px;
-    flex-shrink: 0;
+    margin-top: 33px;
+    margin-bottom: 40px;
+    margin-left: 60px;
 }
-.clear {
-    clear: left;
+
+.quantidadeMaterial {
+    float: right;
+    margin-top: -138px;
+    margin-right: 750px;
 }
+
+p, strong{
+    font-family: 'FiraCode';
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    color: white;
+    margin-bottom: 100px;
+
+}
+
+strong {
+    color: #F49F1C;
+    margin-top: 100px;
+}
+
+
+
+  

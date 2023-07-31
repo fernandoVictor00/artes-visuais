@@ -1,12 +1,14 @@
-import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Component,  } from '@angular/core';
+import { FormBuilder, FormGroup, Validators,  } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-manager-page',
   templateUrl: './manager-page.component.html',
   styleUrls: ['./manager-page.component.css'],
+  
 })
+
 export class ManagerPageComponent {
   managerForm: FormGroup;
   constructor(
@@ -25,5 +27,8 @@ export class ManagerPageComponent {
   }
   redirectPage(redirect: string) {
     this.router.navigate([redirect]);
-  }
+  }  
+
+  
+  
 }
