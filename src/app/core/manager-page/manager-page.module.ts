@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { ManagerPageComponent } from './manager-page.component';
 import { ManagerPageRoutingModule } from './manager-page-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatRadioModule } from '@angular/material/radio';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     ManagerPageRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatRadioModule ,
   ],
   exports: [],
 })
